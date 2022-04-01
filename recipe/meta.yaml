@@ -1,5 +1,5 @@
 {% set name = "kedro-mlflow" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: bad739aecfb1794a00e95dfc364731599b47c86effba6d8c88a2327bff0d8d62
+  sha256: 864c00743787aa35ffb989663c39d8f0f00eaa51038f9791e67e5fd35663c65b
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
-  summary: 'A Kedro plugin to use mlflow in your Kedro projects'
+  summary: A Kedro plugin to use mlflow in your Kedro projects
   description: |
     kedro-mlflow is a Kedro plugin for lightweight and portable integration of mlflow capabilities inside kedro projects.
     It enforces Kedro principles to make mlflow usage as production ready as possible. 
