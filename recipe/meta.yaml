@@ -11,26 +11,27 @@ source:
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.6,<3.9
+    - python >=3.7,<3.11
+    - setuptools-scm
     - pip
   run:
-    - python >=3.6,<3.9
-    - kedro >=0.17.1,<0.18.0
-    - mlflow >=1.0.0,<2.0.0
+    - python >=3.7,<3.11
+    - kedro >=0.18.1,<0.19.0
+    - mlflow >=1.0.0,<3.0.0
     - pydantic >=1.0.0,<2.0.0
 
 test:
   imports:
     - kedro_mlflow
-  requires:
-    - pip
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Galileo-Galilei/kedro-mlflow
@@ -48,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - Galileo-Galilei
+    - rxm7706
