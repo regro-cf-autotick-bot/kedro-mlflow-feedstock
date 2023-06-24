@@ -1,11 +1,11 @@
-About kedro-mlflow
-==================
+About kedro-mlflow-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kedro-mlflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Galileo-Galilei/kedro-mlflow
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kedro-mlflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Kedro plugin to use mlflow in your Kedro projects
 
