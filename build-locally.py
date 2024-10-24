@@ -6,7 +6,6 @@
 #
 # The line above this comment is a bash / sh / zsh guard
 # to stop people from running it with the wrong interpreter
-
 import glob
 import os
 import platform
